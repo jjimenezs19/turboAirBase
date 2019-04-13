@@ -1,0 +1,77 @@
+&__header{
+  background: rgba(0,0,0,0.8);
+  .navbar{
+    .nav{
+      .nav-item{
+        .nav-link{
+          color:#fff;
+          &:hover{
+            color: $primary;
+          }
+        }
+        .youtube-link{
+          font-weight: 700;
+          .youtube-box{
+            width: 80px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+&__top-slide{
+  background:rgba(0,0,0,0.8);
+  padding: 40px 80px;
+  .main-title-container{
+    padding: 120px 0;
+    .brand-name{
+      color:$primary;
+      font-size: 3.5rem;
+      font-weight: 400;
+    }
+    .brand-label{
+      color:#fff;
+      font-size: 1rem;
+      border-top: 1px dashed #ffffff;
+    }
+  }
+  .top-slide-menu{
+    padding: 120px 30px 80px 30px;
+    .nav{
+      .nav-item{
+        background: transparent;
+        border: 1px solid $primary;
+        margin: 0 5px;
+        position: relative;
+        &:hover{
+          &:after{
+            content: url("../../img/icons/arrow-down.svg");
+            position: absolute;
+            bottom: -46px;
+            z-index: 999999;
+            width: 40px;
+            margin: 0 auto;
+            display: block;
+            left: 0;
+            right: 0;
+          }
+        }
+        .nav-link{
+          color:#fff;
+          border-radius: 0;
+          &:hover{
+            color: $primary;
+          }
+          &.active{
+            background: $primary;
+            color:#333;
+            &:hover{
+              color:#333;
+            }
+          }
+        }
+      }
+    }
+  }
+}
