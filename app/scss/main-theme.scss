@@ -7,9 +7,13 @@
 
 //Modules
 .turbo-air{
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
   @import "modules/header";
   @import "modules/vision";
   @import "modules/features";
+  @import "modules/kitchen";
   @import "modules/brands";
   @import "modules/network";
   @import "modules/newsletter";

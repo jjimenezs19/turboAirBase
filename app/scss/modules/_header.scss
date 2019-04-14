@@ -24,20 +24,21 @@
   background:rgba(0,0,0,0.8);
   padding: 40px 80px;
   .main-title-container{
-    padding: 120px 0;
+    padding: 150px 0;
     .brand-name{
       color:$primary;
       font-size: 3.5rem;
       font-weight: 400;
+      text-transform: uppercase;
     }
     .brand-label{
       color:#fff;
-      font-size: 1rem;
+      font-size: 1.5rem;
       border-top: 1px dashed #ffffff;
     }
   }
   .top-slide-menu{
-    padding: 120px 30px 80px 30px;
+    padding: 120px 200px 80px 200px;
     .nav{
       .nav-item{
         background: transparent;
