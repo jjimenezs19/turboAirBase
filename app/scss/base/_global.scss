@@ -4,14 +4,37 @@ a{
     text-decoration: none;
   }
 }
+
+
+//Main text color
+.primary-text{
+  color:$primary;
+}
+
+//Learn More Button
 .learn-more-btn{
   background: transparent;
   color: #ffffff;
   border: 1px solid $primary;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 5px 50px;
   &:hover{
     background: $primary;
     color: #ffffff;
+  }
+}
+
+//Shaped title
+.figure-taq{
+  clip-path: polygon(49% 31%, 100% 18%, 100% 0, 0 0, 0 17%);
+  -webkit-clip-path: polygon(49% 31%, 100% 18%, 100% 0, 0 0, 0 17%);
+  background:$primary;
+  width:210px;
+  height:180px;
+  text-align:center;
+  margin: 0 auto;
+  .figure-taq-text{
+    font-size: 20px;
+    font-weight: 600;
   }
 }
