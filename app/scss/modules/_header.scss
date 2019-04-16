@@ -1,10 +1,20 @@
+&__header-container{
+  background: url("../../video/home.mp4");
+  min-height: 1026px;
+}
+
 &__header{
-  background: rgba(0,0,0,0.8);
+  //background: rgba(0,0,0,0.8);
   .navbar{
+    max-width: 1342px;
+    margin: 0 auto;
     .nav{
       .nav-item{
         .nav-link{
           color:#fff;
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 400;
           &:hover{
             color: $primary;
           }
@@ -21,29 +31,36 @@
   }
 }
 &__top-slide{
-  background:rgba(0,0,0,0.8);
+  //background:rgba(0,0,0,0.8);
   padding: 40px 80px;
   .main-title-container{
-    padding: 150px 0;
+    padding: 250px 0 150px 0;
     .brand-name{
       color:$primary;
-      font-size: 3.5rem;
+      font-size: 72px;
+      line-height: 96px;
       font-weight: 400;
       text-transform: uppercase;
+      position: relative;
     }
     .brand-label{
       color:#fff;
-      font-size: 1.5rem;
+      position: relative;
+      font-size: 28px;
+      line-height: 32px;
+      font-weight: 400;
       border-top: 1px dashed #ffffff;
     }
   }
   .top-slide-menu{
-    padding: 120px 200px 80px 200px;
+    padding: 200px 0 80px 0;
+    max-width: 680px;
+    margin: 0 auto;
     .nav{
       .nav-item{
         background: transparent;
         border: 1px solid $primary;
-        margin: 0 5px;
+        margin: 0 2.5px;
         position: relative;
         &:hover{
           &:after{
@@ -60,7 +77,11 @@
         }
         .nav-link{
           color:#fff;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 20px;
           border-radius: 0;
+          padding: 0.5rem;
           &:hover{
             color: $primary;
           }

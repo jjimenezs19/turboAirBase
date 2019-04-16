@@ -1,4 +1,22 @@
 &__kitchen{
-  background:rgba(0,0,0,0.8);
-  padding: 40px 0;
+  background:url("../../img/backgrounds/bg-3.png");
+  padding: 48px 0;
+  min-height: 405px;
+  &__info{
+    max-width: 466px;
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    h4{
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 64px;
+    }
+    p{
+      border-top: 1px dashed #ffffff;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      color:#e2e2e2;
+    }
+  }
 }
