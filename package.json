@@ -1,7 +1,7 @@
 {
-  "name": "react-curso",
-  "version": "1.0.0",
-  "description": "React Curso",
+  "name": "turbo_air",
+  "version": "1.5.0",
+  "description": "Turbo Air Gulp File",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,16 +9,13 @@
   "author": "Jason Jimenez Siles",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.4.3",
     "browser-sync": "^2.26.3",
-    "clean-css": "^4.1.11",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "^3.9.4",
-    "gulp-plumber": "^1.2.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-uglify": "^3.0.0",
-    "gulp-uncss": "^1.0.6",
-    "gulp-useref": "^3.1.5"
+    "cssnano": "^4.1.8",
+    "gulp": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4"
   },
   "dependencies": {
     "natives": "^1.1.6"
