@@ -97,3 +97,53 @@
     }
   }
 }
+
+/**
+  Mobile Menu
+**/
+.menu-sidebar {
+  box-shadow: 5px 0 5px -5px #333;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  background: #282A33;
+  //background-size: 517px;
+  color: #333;
+  position: fixed;
+  transform: translateX(450px);
+  transition: transform 0.5s cubic-bezier(0,0,0.3,1);
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  .close-menu-btn{
+    background: #253147;
+    border:1px solid #1366DD;
+    color:#1366DD;
+    border-radius: 50%;
+    padding: 10px 15px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+  ul{
+    list-style-type: none;
+  }
+  li {
+    height: 55px;
+    line-height: 55px;
+    text-align: left;
+    position: relative;
+    a{
+      color:#8AA0C1;
+      font-weight: 500;
+      letter-spacing: 2px;
+      font-size: 22px;
+      &:hover{
+        color:#0FAFFF;
+      }
+    }
+  }
+  @media(max-width: 790px){
+    transform: translateX(850px);
+  }
+}
+
