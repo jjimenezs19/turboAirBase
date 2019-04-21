@@ -1,0 +1,67 @@
+&__footer{
+  background: url("../../img/backgrounds/bg-footer.png") no-repeat;
+  height: 526px;
+  padding: 85px 0 0 0;
+  &__container{
+    max-width: 696px;
+    margin: 0 auto;
+    &__menu{
+      .menu-label{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        color:#ffc700;
+      }
+      ul{
+        li{
+          a{
+            color:#e2e2e2;
+            font-weight: 400;
+            font-family: Arial, serif;
+            font-size: 14px;
+            line-height: 29px;
+          }
+        }
+      }
+      ul.contact-info{
+        li{
+          color:#e2e2e2;
+          font-weight: 400;
+          font-family: Arial, serif;
+          font-size: 14px;
+          line-height: 29px;
+          .contact-link{
+            a{
+              color:#ffc700;
+            }
+          }
+        }
+        li.line{
+          color:#ffc700;
+        }
+      }
+    }
+    &__important-links{
+      padding: 100px 0 0 0 ;
+      ul{
+        li{
+          background-color: #765fba;
+          width: 211px;
+          padding: 10px 0;
+          text-align: center;
+          margin: 0 10px;
+          a{
+            color:#fff;
+          }
+        }
+      }
+      &__copy{
+        color:#ffc700;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        font-family: Arial, serif;
+      }
+    }
+  }
+}

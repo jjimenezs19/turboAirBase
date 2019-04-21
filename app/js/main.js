@@ -10,26 +10,52 @@
 //     });
 // }
 //
-// function closeMenuMobile(){
-//     $('.menu-sidebar').removeClass('active');
-// }
+function closeMenuMobile(){
+    $('.menu-sidebar').removeClass('active');
+}
 //
-// function openMenuMobile(){
-//     $('.menu-sidebar').addClass('active');
-// }
+function openMenuMobile(){
+    $('.menu-sidebar').addClass('active');
+}
 //
-// $(document).on('click', '.open-menu-btn', function () {
-//     $('body').addClass('modal-open');
-//     openMenuMobile();
-// });
-// $(document).on('click', '.close-menu-btn', function () {
-//     $('body').removeClass('modal-open');
-//     closeMenuMobile();
-// });
-// $(document).on('click', '.menu-link', function () {
-//     $('body').removeClass('modal-open');
-//     closeMenuMobile();
-// });
+$(document).on('click', '.open-menu-btn', function () {
+    $('body').addClass('modal-open');
+    openMenuMobile();
+});
+$(document).on('click', '.close-menu-btn', function () {
+    $('body').removeClass('modal-open');
+    closeMenuMobile();
+});
+$(document).on('click', '.menu-link', function () {
+    $('body').removeClass('modal-open');
+    closeMenuMobile();
+});
+
+//Show Brands Popup
+function showBrandsPopup(){
+    var selector = $('.brands-container');
+    selector.css('display', 'block');
+    setTimeout(function () {
+        selector.css('opacity', '1');
+    }, 500);
+}
+function hideBrandsPopup(){
+    var selector = $('.brands-container');
+    selector.css('opacity', '0');
+    setTimeout(function () {
+        selector.css('display', 'none');
+    }, 500);
+}
+$(document).on('click', '.show-brands', function () {
+    showBrandsPopup();
+});
+$(document).on('click', '.hide-brands', function () {
+    hideBrandsPopup();
+});
+
+
+
+
 //
 // $(document).on('click', '.open-img-btn', function () {
 //     $('body').addClass('modal-open');

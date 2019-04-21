@@ -10,7 +10,7 @@ var gulp = require("gulp"),
 var paths = {
     styles: {
         // By using styles/**/*.sass we're telling gulp to check all folders for any sass file
-        src: "app/scss/*.scss",
+        src: "app/scss/**/*.scss",
         // Compiled files will end up in whichever folder it's found in (partials are not compiled)
         dest: "app/css"
     }
@@ -35,7 +35,9 @@ function style() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(paths.styles.dest))
         // Add browsersync stream pipe after compilation
-        .pipe(browserSync.stream());
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 }
 // A simple task to reload the page
 function reload(done) {
@@ -66,7 +68,7 @@ function watch() {
 
 
 // Don't forget to expose the task!
-exports.watch = watch
+exports.watch = watch;
 
 // Expose the task by exporting it
 // This allows you to run it from the commandline using
