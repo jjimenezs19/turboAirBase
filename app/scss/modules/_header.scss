@@ -169,7 +169,7 @@
 /**
   Mobile Menu
 **/
-.menu-sidebar {
+&__menu-sidebar {
   box-shadow: 5px 0 5px -5px #333;
   display: block;
   width: 100%;
@@ -230,7 +230,7 @@
     box-shadow: none;
   }
 }
-.menu-sidebar.active{
+&__menu-sidebar.active{
   transform: translateX(0);
   transition: transform 0.5s cubic-bezier(0,0,0.3,1);
 }
