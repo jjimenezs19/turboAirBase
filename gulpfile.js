@@ -61,6 +61,7 @@ function watch() {
     // This can be html or whatever you're using to develop your website
     // Note -- you can obviously add the path to the Paths object
     gulp.watch("app/*.html", reload);
+    gulp.watch("app/js/*.js", reload);
 }
 
 // We don't have to expose the reload function

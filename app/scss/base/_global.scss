@@ -47,3 +47,24 @@ a{
     box-shadow: 6px 22px 34px 1px rgba(0,0,0,5);
   }
 }
+
+//go to top btn
+.scrollToTop{
+  background-color: $primary;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  position: fixed;
+  bottom: 40px;
+  right: calc(10% - 100px);
+  border:1px solid #fff;
+  z-index: 100;
+  &:focus{
+    box-shadow: none;
+    outline: none;
+  }
+}

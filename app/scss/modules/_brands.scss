@@ -1,12 +1,15 @@
 &__brands{
   background:url("../../img/backgrounds/bg-2.png");
-  padding: 0 0 70px 0;
+  padding: 0 0 20px 0;
+  @media(min-width: 1200px){
+    padding: 0 0 70px 0;
+  }
   &__showcase{
     &__brand-box{
       &:first-child{
-        padding: 105px 287px 45px 287px;
+        padding: 105px 15px 45px;
       }
-      padding: 55px 287px 45px 287px;
+      padding-bottom: 50px;
       .brand-logo{
         img{
           width: 386px;
@@ -36,6 +39,17 @@
       }
       .brand-img{
         padding-top: 60px;
+      }
+      @media(min-width: 768px){
+        &:first-child{
+          padding: 105px 50px 45px;
+        }
+      }
+      @media(min-width: 1200px){
+        &:first-child{
+          padding: 105px 287px 45px 287px;
+        }
+        padding: 55px 287px 45px 287px;
       }
     }
     .brand-separator{

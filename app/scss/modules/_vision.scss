@@ -21,7 +21,10 @@
     margin: 0 auto;
     width: 100%;
     border-top: 1px dashed #ffffff;
-    padding-top: 15px;
+    padding: 20px;
+    @media(min-width: 1024px){
+      padding: 15px 0 0 0;
+    }
     p{
       font-size: 16px;
     }

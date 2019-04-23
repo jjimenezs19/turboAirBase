@@ -1,7 +1,11 @@
 &__footer{
-  background: url("../../img/backgrounds/bg-footer.png") no-repeat;
-  height: 526px;
-  padding: 85px 0 0 0;
+  background: url("../../img/backgrounds/bg-footer.png") no-repeat center;
+  background-size: cover;
+  padding: 55px 20px 20px 20px;
+  @media(min-width: 1024px){
+    padding: 85px 20px 20px 20px;
+    height: 526px;
+  }
   &__container{
     max-width: 696px;
     margin: 0 auto;

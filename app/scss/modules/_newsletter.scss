@@ -1,7 +1,10 @@
 &__newsletter{
   background: #ffc83e url("../../img/backgrounds/newsletter.png") no-repeat top;
   min-height: 239px;
-  padding: 100px 0 40px 0;
+  padding: 100px 20px 40px 20px;
+  @media (min-width: 1024px) {
+    padding: 100px 0 40px 0;
+  }
   &__form{
     max-width: 558px;
     margin: 0 auto;
@@ -32,6 +35,10 @@
         background: #ef8733;
         text-transform: uppercase;
         margin-bottom: 5px;
+        margin-top: 10px;
+        @media (min-width: 1024px) {
+          margin-top: 0;
+        }
       }
     }
   }

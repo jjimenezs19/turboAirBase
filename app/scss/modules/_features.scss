@@ -18,6 +18,7 @@
         border-radius: 0;
         background: #3A3F4C;
         padding: 15px;
+        font-size: 14px;
         &:hover{
           color: $primary;
         }
@@ -27,6 +28,9 @@
           &:hover{
             color:#333;
           }
+        }
+        @media(min-width: 1024px) {
+          font-size: 17px;
         }
       }
     }
@@ -78,6 +82,10 @@
         .info-text-title{
           max-width: 304px;
           text-align: center;
+          margin: 0 auto;
+          @media(min-width: 1024px){
+            margin: 0;
+          }
           .info-label{
             font-size: 18px;
             font-weight: 400;
@@ -87,9 +95,13 @@
         }
         .info-text{
           max-width: 304px;
-          height: 180px;
           padding: 40px 20px;
           background-color: rgba(255, 255, 255, 0.2);
+          margin: 0 auto;
+          @media(min-width: 1024px){
+            margin: 0;
+            height: 180px;
+          }
           p{
             color:#e2e2e2;
           }
@@ -148,6 +160,10 @@
         .info-text-title{
           max-width: 304px;
           text-align: center;
+          margin: 0 auto;
+          @media(min-width: 1024px){
+            margin: 0;
+          }
           .info-label{
             font-size: 18px;
             font-weight: 400;
@@ -157,9 +173,13 @@
         }
         .info-text{
           max-width: 304px;
-          height: 180px;
           padding: 40px 20px;
           background-color: rgba(255, 255, 255, 0.2);
+          margin: 0 auto;
+          @media(min-width: 1024px){
+            margin: 0;
+            height: 180px;
+          }
           p{
             color:#e2e2e2;
           }

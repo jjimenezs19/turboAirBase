@@ -1,9 +1,14 @@
 &__header-container{
-  background: url("../../video/home.mp4");
+  //background: url("../../video/home.mp4");
   min-height: 1026px;
 }
 
 &__header{
+  max-width: 1440px;
+  margin: 0 auto;
+  &.bg-dark{
+    border-bottom: 1px solid $primary;
+  }
   .navbar{
     max-width: 1342px;
     margin: 0 auto;
@@ -100,9 +105,12 @@
 }
 &__top-slide{
   //background:rgba(0,0,0,0.8);
-  padding: 40px 80px;
+  padding: 40px 15px;
+  @media(min-width: 1024px){
+    padding: 40px 80px;
+  }
   .main-title-container{
-    padding: 250px 0 150px 0;
+    padding: 250px 0 0 0;
     .brand-name{
       color:$primary;
       font-size: 72px;
@@ -114,10 +122,16 @@
     .brand-label{
       color:#fff;
       position: relative;
-      font-size: 28px;
+      font-size: 20px;
       line-height: 32px;
       font-weight: 400;
       border-top: 1px dashed #ffffff;
+      @media(min-width: 1024px){
+        font-size: 28px;
+      }
+    }
+    @media(min-width: 1024px){
+      padding: 250px 0 150px 0;
     }
   }
   .top-slide-menu{
@@ -152,6 +166,7 @@
           padding: 0.5rem;
           &:hover{
             color: $primary;
+            cursor: pointer;
           }
           &.active{
             background: $primary;
@@ -169,7 +184,7 @@
 /**
   Mobile Menu
 **/
-&__menu-sidebar {
+.menu-sidebar {
   box-shadow: 5px 0 5px -5px #333;
   display: block;
   width: 100%;
@@ -204,12 +219,19 @@
     text-align: left;
     position: relative;
     a{
-      color: #ffffff;
+      color:#fff;
+      font-size: 15px;
+      line-height: 20px;
       font-weight: 400;
-      letter-spacing: 2px;
-      font-size: 22px;
       &:hover{
         color: $primary;
+      }
+    }
+    .youtube-link{
+      font-weight: 700;
+      .youtube-box{
+        width: 80px;
+        height: 24px;
       }
     }
   }
@@ -230,7 +252,12 @@
     box-shadow: none;
   }
 }
-&__menu-sidebar.active{
+.menu-sidebar.active{
   transform: translateX(0);
   transition: transform 0.5s cubic-bezier(0,0,0.3,1);
 }
+
+#homeVideo {
+  z-index: -1; // Put the video behind all other elements
+}
+
